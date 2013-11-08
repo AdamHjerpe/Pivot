@@ -98,6 +98,31 @@
     border-top-left-radius: 3px; // TODO: Add compass for css3 support
     border-top-right-radius: 3px;
   }
+  figure {
+    $button-size: 3rem;
+
+    position: relative;
+    a {
+
+      background: url(../assets/img/Plus_symbol.svg) $bold-col;
+      background-position: center center;
+      background-size: 3.5em;
+      box-shadow: 0 0 0 0.4em fade_out($bold-col, 0.7);
+      box-sizing: border-box;
+      position: absolute;
+      border-radius: 100%;
+      width: $button-size;
+      height: $button-size;
+      bottom: $button-size / 1.5;
+      left: 50%;
+      margin-left: -$button-size / 2;
+    }
+  }
+  h3 {
+    padding: 0 2em;
+    font-size: 0.875em;
+    @include uppercase-bold(0.1em);
+  }
   p {
     @include push-down(0.125);
     overflow: hidden;
@@ -145,15 +170,22 @@
   @extend center-setter;
   color: $header-text-col;
 }
-.twitter-icon{
+%icon-pos{
+  display: block;
+  float: left;
+}
+.twitter-icon {
+  @extend %icom-pos;
   @include circle-icon(4rem);
   background: #1b9ac7;
 }
-.facebook-icon{
+.facebook-icon {
+  @extend %icom-pos;
   @include circle-icon(4rem);
   background: #3a5a9a;
 }
-.google-plus-icon{
+.google-plus-icon {
+  @extend %icom-pos;
   @include circle-icon(4rem);
   background: #dd4a38;
 }

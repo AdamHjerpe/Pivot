@@ -98,7 +98,7 @@ strong {
   margin: 0 auto;
   width: 90%; }
 
-.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article a {
+.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article a {
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -177,32 +177,9 @@ body {
 
   .wrapper .hero-feature, .wrapper .gallery-article {
     width: 30.33333%; } }
-@media screen and (max-width: 40em) {
-  body {
-    min-width: 100%; }
-
-  .sponsor-holder, .hero-feature, .gallery-article {
-    display: inline;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-
-  .wrapper::before, .column::before, .main-nav::before, .wrapper::after, .column::after, .main-nav::after {
-    content: "";
-    display: table; }
-  .wrapper:after, .column:after, .main-nav:after {
-    clear: both; }
-
-  .column {
-    display: block;
-    float: left; }
-    .column::first-child {
-      margin-left: 0; }
-
-  .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; } }
+@media screen and (max-width: 45em) {
+  .hero-feature, .gallery-article, .sponsor-holder {
+    width: 90% !important; } }
 .main-header, .hero-unit, .main-footer, .article-gallery, .sponsor-gallery, .map-holder {
   padding: 3em 1em 1.5em 1em;
   min-height: 1.5rem;
@@ -242,7 +219,7 @@ body {
   margin: 0 auto;
   width: 90%; }
 
-.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article a {
+.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article a {
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -328,6 +305,25 @@ body {
     max-height: 18rem;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
+  .gallery-article figure {
+    position: relative; }
+    .gallery-article figure a {
+      background: url(../assets/img/Plus_symbol.svg) #c0382b;
+      background-position: center center;
+      background-size: 3.5em;
+      box-shadow: 0 0 0 0.4em rgba(192, 56, 43, 0.3);
+      box-sizing: border-box;
+      position: absolute;
+      border-radius: 100%;
+      width: 3rem;
+      height: 3rem;
+      bottom: 2rem;
+      left: 50%;
+      margin-left: -1.5rem; }
+  .gallery-article h3 {
+    padding: 0 2em;
+    font-size: 0.875em;
+    letter-spacing: 0.1em; }
   .gallery-article p {
     margin-bottom: 0.1875rem;
     overflow: hidden;
