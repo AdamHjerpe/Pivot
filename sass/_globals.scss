@@ -1,0 +1,14 @@
+// TODO: Cleanup on aisle 5!
+$line-height: 1.5rem;
+$header-col: #2c2e3b;
+$header-text-col: #fff;
+$background-col: #ddd;
+$text-col: #222;
+
+$large-page-width: 75em;
+$gutter-width: 1.5em;
+$column-count: 12; // Locked in to 12, DON'T FUCKING CHANGE IT! The naming convention of the grid mixin is dependent on this staying the same.
+$red: #c0382b;
+$bold-col: $red;
+
+$base-font: "Proxima Nova";

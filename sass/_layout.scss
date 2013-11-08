@@ -1,0 +1,82 @@
+
+@import "globals";
+@import "mixins";
+
+@include base-grid(
+    $width: $large-page-width,
+    $gutter: $gutter-width,
+    $columns: $column-count
+  );
+
+@include generate-grid(
+    $width: $large-page-width,
+    $gutter: $gutter-width,
+    $columns: $column-count
+  );
+
+%pane {
+  padding: 3em 1em 3em 1em;
+  min-height: $line-height * 4;
+  width: 100%;
+}
+.wrapper {
+  @extend %container-12;
+  @extend %clear;
+}
+.column {
+  @extend %col;
+  @extend %clear;
+}
+
+@mixin pane($color, $text-col) {
+  @extend %pane;
+  background: $color;
+  color: $text-col;
+}
+
+%dark-pane {
+  @include pane($header-col, $header-text-col);
+}
+
+%light-pane {
+  @include pane($background-col, $text-col);
+}
+
+.main-header {
+  @extend %dark-pane;
+}
+  .logo-holder{
+    @extend %span-4-of-12;
+  }
+  .main-nav{
+    @extend %span-8-of-12;
+  }
+
+.hero-unit {
+  @extend %dark-pane;
+}
+  .hero-feature {
+    @extend %span-4-of-12;
+  }
+
+.article-gallery {
+  @extend %light-pane;
+}
+  .gallery-article {
+    @extend %span-4-of-12;
+  }
+
+.sponsor-gallery {
+  @extend %light-pane;
+}
+  .sponsor-holder {
+    @extend %span-3-of-12;
+  }
+
+.map-holder {
+  @extend %light-pane;
+}
+
+.main-footer {
+  @extend %dark-pane;
+}

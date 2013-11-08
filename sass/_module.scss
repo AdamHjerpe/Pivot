@@ -1,0 +1,85 @@
+@import "globals";
+@import "mixins";
+
+%center-setter {
+  margin: 0 auto;
+  width: 90%;
+}
+.hero-title {
+  @extend %center-setter;
+  > h1 {
+    margin-bottom: $line-height;
+    text-align: center;
+    font-size: 3em;
+    line-height: $line-height * 2;
+    > strong {
+      color: $bold-col;
+    }
+  }
+}
+.section-header {
+  @extend %center-setter;
+  > h2{
+    margin-bottom: $line-height * 2;
+    text-align: center;
+    font-size: 1.5em;
+    &::before, &::after {
+      margin: 0 1em 0 1em;
+      color: lighten($text-col, 40%); // TODO: Fix this shit, the lines need to be wider, like 3ems.
+      content: "\2014";
+      font-size: 1em;
+    }
+  }
+}
+
+.gallery-article {
+  margin-bottom: $line-height;
+  border-radius: 3px;
+  background: #fff;
+
+  figure > img {
+    margin-bottom: $line-height * 2;
+    max-height: $line-height * 12;
+    width: 100%;
+
+    height: auto;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  p {
+    overflow: ellipsis;
+    margin-bottom: $line-height * 0.125;
+    padding: 0 2em;
+    max-height: $line-height * 2;
+    color: #999;
+    font-size: 0.875em;
+    line-height: $line-height * 0.875;
+    strong {
+      color: #000;
+    }
+
+  }
+  a {
+    display: block;
+    margin-top: $line-height;
+    padding: 1em;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: $bold-col;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+}
+
+.sponsor-holder {
+  margin-bottom: $line-height;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
