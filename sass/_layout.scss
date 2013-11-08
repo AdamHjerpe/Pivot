@@ -13,6 +13,32 @@
     $gutter: $gutter-width,
     $columns: $column-count
   );
+@media screen and (max-width: 75em) {
+    @include base-grid(
+    $width: 100%,
+    $gutter: 3%,
+    $columns: $column-count
+  );
+
+@include generate-grid(
+    $width: 100%,
+    $gutter: 3%,
+    $columns: $column-count
+  );
+}
+@media screen and (max-width: 40em) {
+    @include base-grid(
+    $width: 100%,
+    $gutter: 0,
+    $columns: 1
+  );
+
+@include generate-grid(
+    $width: 100%,
+    $gutter: 0,
+    $columns: 1
+  );
+}
 
 %pane {
   padding: 3em 1em 1.5em 1em;
@@ -20,7 +46,7 @@
   width: 100%;
 }
 .wrapper {
-  @extend %container-12;
+  @extend %container;
   @extend %clear;
 }
 .column {
@@ -41,16 +67,21 @@
 
 %light-pane {
   @include pane($background-col, $text-col);
+  @include at2x("../assets/img/white_carbon", 8px, 8px);
 }
 
 .main-header {
   @extend %dark-pane;
 }
   .logo-holder{
-    @extend %span-5-of-12;
+   float: left;
   }
   .main-nav{
-    @extend %span-7-of-12
+    float: right;
+    display: inline;
+    text-align: right;
+  @extend %clear;
+
   }
 
 .section-header {
@@ -64,21 +95,21 @@
     @extend %center-setter;
   }
   .hero-feature {
-    @extend %span-4-of-12;
+    @extend %span-4;
   }
 
 .article-gallery {
   @extend %light-pane;
 }
   .gallery-article {
-    @extend %span-4-of-12;
+    @extend %span-4;
   }
 
 .sponsor-gallery {
   @extend %light-pane;
 }
   .sponsor-holder {
-    @extend %span-3-of-12;
+    @extend %span-3;
   }
 
 .map-holder {

@@ -1,19 +1,24 @@
 @import "globals";
 @import "mixins";
-
+.icon {
+  @extend %fa;
+}
 .logo-holder {
   h1 {
     @include uppercase-bold(0.01em);
     font-size: 2em;
     line-height: $line-height;
+    i {
+      color: $bold-col; font-size: 0.875em;
+      letter-spacing: 0.1em;
+    }
     span {
       color: $bold-col;
     }
   }
 }
 
-.main-nav {
-
+.main-nav { // TODO: Fix that float
   a {
     @include uppercase-bold(0.1em);
     display: block;
@@ -47,13 +52,12 @@
   }
 }
 .hero-feature {
-  $hero-figure-size: 9em;
+  $hero-figure-size: 9rem;
   figure {
-    margin: $line-height auto;
-    width: $hero-figure-size;
-    height: $hero-figure-size;
-    border-radius: 100%;
-    background: rgba(100,100,100,0.5);
+    @extend %fa;
+    @include circle-icon($hero-figure-size);
+    @include push-down(1);
+    background: rgba(100,100,150,0.5);
   }
   h2 {
     @include uppercase-bold(0.1em);
@@ -82,12 +86,9 @@
 }
 
 .gallery-article {
-
-
 @include push-down(1);
   border-radius: 3px;
   background: #fff;
-
   figure > img {
     @extend %img-resize;
     // TODO: Add hover overlay on image, read webkit filter
@@ -99,7 +100,8 @@
   }
   p {
     @include push-down(0.125);
-    overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
     padding: 0 2em;
     max-height: $line-height * 2;
     color: #999;
@@ -111,12 +113,11 @@
     strong {
       color: #000;
     }
-
   }
   a {
     @include uppercase-bold(0.1em);
     display: block;
-    margin-top: $line-height;
+    margin-top: $line-height * 0.9;
     padding: 0.75em 1em;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -125,7 +126,7 @@
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    line-height: $line-height;
+    line-height: $line-height * 1;
   }
 }
 
@@ -138,4 +139,26 @@
 #map-canvas {
   min-height: $line-height * 15;
   width: 100%;
+}
+
+.social-icons {
+  @extend center-setter;
+  color: $header-text-col;
+}
+.twitter-icon{
+  @include circle-icon(4rem);
+  background: #1b9ac7;
+}
+.facebook-icon{
+  @include circle-icon(4rem);
+  background: #3a5a9a;
+}
+.google-plus-icon{
+  @include circle-icon(4rem);
+  background: #dd4a38;
+}
+
+.footer-logo-holder {
+  @extend .logo-holder;
+  @extend %center-setter;
 }

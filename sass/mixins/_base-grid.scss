@@ -44,14 +44,14 @@
     $column_width: $width / $columns;
     $prefix: false !default;
     $push: false !default;
-    $container-name: "%container-#{$columns}";
+    $container-name: "%container";
   #{$container-name} {
     margin-left: auto;
     margin-right: auto;
     width: $width;
   } // %container
   @for $i from 1 through $columns {
-    %span-#{$i}-of-#{$columns} {
+    %span-#{$i} {
       @extend %grid;
       #{$container-name} & {
         width: $i * $column_width - $gutter;
