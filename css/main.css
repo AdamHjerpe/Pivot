@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   line-height: 1.5rem; }
 
 ol, ul {
@@ -363,27 +363,19 @@ body {
 .twitter-icon, .facebook-icon, .google-plus-icon {
   display: block;
   float: left;
-  margin: 0 1.5rem; }
-
-.twitter-icon {
+  margin: 0 1.5rem;
   font-size: 2.22222rem;
   line-height: 4rem;
   width: 4rem;
-  height: 4rem;
+  height: 4rem; }
+
+.twitter-icon {
   background: #1b9ac7; }
 
 .facebook-icon {
-  font-size: 2.22222rem;
-  line-height: 4rem;
-  width: 4rem;
-  height: 4rem;
   background: #3a5a9a; }
 
 .google-plus-icon {
-  font-size: 2.22222rem;
-  line-height: 4rem;
-  width: 4rem;
-  height: 4rem;
   background: #dd4a38; }
 
 .sponsor-holder {

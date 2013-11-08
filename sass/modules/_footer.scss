@@ -12,23 +12,21 @@
   display: block;
   float: left;
   margin: 0 1.5rem;
+  @include circle-icon(4rem);
 }
 .twitter-icon {
   @extend %icon-pos;
   @extend %fa-twitter;
-  @include circle-icon(4rem);
   background: #1b9ac7;
 }
 .facebook-icon {
   @extend %icon-pos;
   @extend %fa-facebook;
-  @include circle-icon(4rem);
   background: #3a5a9a;
 }
 .google-plus-icon {
   @extend %icon-pos;
   @extend %fa-google-plus;
-  @include circle-icon(4rem);
   background: #dd4a38;
 }
 

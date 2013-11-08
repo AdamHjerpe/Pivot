@@ -1,0 +1,49 @@
+
+// Retinajs mixin to fix retina images.
+@mixin at2x($image_name, $w: auto, $h: auto, $extention: '.png') {
+  background-image: url($image_name + $extention);
+  $x2img : $image_name + '@2x' + $extention;
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5) {
+    background-image: url($x2img);
+    background-size: $w $h;
+  }
+}
+// When we need things centered
+%center-setter {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+// Simple little thing to minimize repeating code
+%uppercase-bold{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@mixin uppercase-bold($letter-spacing) {
+  @extend %uppercase-bold;
+  letter-spacing: $letter-spacing;
+}
+@mixin push-down($i) {
+  margin-bottom: $line-height * $i;
+}
+// Responsive image fix
+%img-resize {
+  width: 100%;
+  height: auto;
+}
+// Making divs roundish
+%circle-icon {
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+}
+@mixin circle-icon($circle-size) {
+  @extend %circle-icon;
+  font-size: $circle-size / 1.8;
+  line-height: $circle-size;
+  width: $circle-size;
+  height: $circle-size;
+}
