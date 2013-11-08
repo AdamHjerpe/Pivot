@@ -10,6 +10,7 @@
   }
 }
 %center-setter {
+  text-align: center;
   margin: 0 auto;
   width: 90%;
 }
@@ -20,4 +21,11 @@
 @mixin uppercase-bold($letter-spacing) {
   @extend %uppercase-bold;
   letter-spacing: $letter-spacing;
+}
+@mixin push-down($i) {
+  margin-bottom: $line-height * $i;
+}
+%img-resize {
+  width: 100%;
+  height: auto;
 }

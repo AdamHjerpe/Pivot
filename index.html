@@ -63,15 +63,33 @@
         setgridonresize();
     });
 </script>
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgsKkMMp_Pj7XDEtLeFiw854uR1Ky2Iew&sensor=true">
+    </script>
+</script>
+   <script type="text/javascript">
+     function initialize() {
+       var mapOptions = {
+         center: new google.maps.LatLng(59.3333, 14.5167),
+         zoom: 13,
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+       };
+       var map = new google.maps.Map(document.getElementById("map-canvas"),
+           mapOptions);
+     }
+     google.maps.event.addDomListener(window, 'load', initialize);
+   </script>
 </head>
 <body>
 <header class="main-header">
 <div class="wrapper">
 <div class="column">
-  <section class="logo-holder"><span>.</span>PIV<span class="icon">O</span>T</section>
+  <section class="logo-holder">
+    <h1><span>.</span>PIV<span class="icon">O</span>T</h1>
+    </section>
     <nav class="main-nav" role="navigation">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li class="current-menu-item"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Blog</a></li>
@@ -218,10 +236,12 @@
   <header class="section-header">
     <h2>Our Location</h2>
   </header>
+  <div id="map-canvas"/>
 </section>
 <!-- /.map-holder -->
 <footer class="main-footer"></footer>
 <!-- /.main-footer -->
+
 <script src="assets/js/retina-1.1.0.js"></script>
 </body>
 </html>

@@ -15,8 +15,8 @@
   );
 
 %pane {
-  padding: 3em 1em 3em 1em;
-  min-height: $line-height * 4;
+  padding: 3em 1em 1.5em 1em;
+  min-height: $line-height;
   width: 100%;
 }
 .wrapper {
@@ -47,15 +47,22 @@
   @extend %dark-pane;
 }
   .logo-holder{
-    @extend %span-4-of-12;
+    @extend %span-5-of-12;
   }
   .main-nav{
-    @extend %span-8-of-12;
+    @extend %span-7-of-12
   }
+
+.section-header {
+  @extend %center-setter;
+}
 
 .hero-unit {
   @extend %dark-pane;
 }
+  .hero-title {
+    @extend %center-setter;
+  }
   .hero-feature {
     @extend %span-4-of-12;
   }
@@ -76,6 +83,7 @@
 
 .map-holder {
   @extend %light-pane;
+  padding: 0;
 }
 
 .main-footer {

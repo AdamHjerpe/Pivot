@@ -7,8 +7,9 @@ $text-col: #222;
 
 $large-page-width: 75em;
 $gutter-width: 1.5em;
-$column-count: 12; // Locked in to 12, DON'T FUCKING CHANGE IT! The naming convention of the grid mixin is dependent on this staying the same.
+$column-count: 12; // Locked in to 12, DON'T FUCKING CHANGE IT! The naming convention of the grid mixin is dependent on this staying the same. So basically if you change this you will break the design, and we don't want that now de we?
 $red: #c0382b;
 $bold-col: $red;
+$shadow-text-col: #6a6d76;
 
 $base-font: "Proxima Nova";

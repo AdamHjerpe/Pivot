@@ -52,18 +52,23 @@ em {
 strong {
   font-weight: bold; }
 
-.hero-title, .section-header {
+.section-header, .hero-title {
+  text-align: center;
   margin: 0 auto;
   width: 90%; }
 
-.logo-holder, .gallery-article a {
+.logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article a {
   font-weight: bold;
   text-transform: uppercase; }
+
+.gallery-article figure > img, .sponsor-holder img {
+  width: 100%;
+  height: auto; }
 
 body {
   min-width: 75em; }
 
-.sponsor-holder, .logo-holder, .hero-feature, .gallery-article, .main-nav {
+.sponsor-holder, .hero-feature, .gallery-article, .logo-holder, .main-nav {
   display: inline;
   float: left;
   margin-left: 0.75em;
@@ -89,15 +94,18 @@ body {
 .wrapper .sponsor-holder {
   width: 17.25em; }
 
-.wrapper .logo-holder, .wrapper .hero-feature, .wrapper .gallery-article {
+.wrapper .hero-feature, .wrapper .gallery-article {
   width: 23.5em; }
 
+.wrapper .logo-holder {
+  width: 29.75em; }
+
 .wrapper .main-nav {
-  width: 48.5em; }
+  width: 42.25em; }
 
 .main-header, .hero-unit, .main-footer, .article-gallery, .sponsor-gallery, .map-holder {
-  padding: 3em 1em 3em 1em;
-  min-height: 6rem;
+  padding: 3em 1em 1.5em 1em;
+  min-height: 1.5rem;
   width: 100%; }
 
 .main-header, .hero-unit, .main-footer {
@@ -113,20 +121,45 @@ body {
   background: #dddddd;
   color: #222222; }
 
-.hero-title, .section-header {
+.map-holder {
+  padding: 0; }
+
+.section-header, .hero-title {
+  text-align: center;
   margin: 0 auto;
   width: 90%; }
 
-.logo-holder, .gallery-article a {
+.logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article a {
   font-weight: bold;
   text-transform: uppercase; }
 
-.logo-holder {
+.gallery-article figure > img, .sponsor-holder img {
+  width: 100%;
+  height: auto; }
+
+.logo-holder h1 {
+  letter-spacing: 0.01em;
   font-size: 2em;
-  line-height: 1.5rem;
-  letter-spacing: 0.01em; }
-  .logo-holder span {
+  line-height: 1.5rem; }
+  .logo-holder h1 span {
     color: #c0382b; }
+
+.main-nav a {
+  letter-spacing: 0.1em;
+  display: block;
+  border-bottom: 1px solid #6a6d76;
+  color: #6a6d76;
+  text-decoration: none;
+  font-size: 0.875em; }
+  .main-nav a:hover {
+    border-bottom: 1px solid #c0382b;
+    color: white; }
+.main-nav li {
+  display: inline-block;
+  margin: 0 0.75rem; }
+.main-nav .current-menu-item a {
+  border-bottom: 1px solid #c0382b;
+  color: white; }
 
 .hero-title > h1 {
   margin-bottom: 1.5rem;
@@ -135,6 +168,21 @@ body {
   line-height: 3rem; }
   .hero-title > h1 > strong {
     color: #c0382b; }
+
+.hero-feature figure {
+  margin: 1.5rem auto;
+  width: 9em;
+  height: 9em;
+  border-radius: 100%;
+  background: rgba(100, 100, 100, 0.5); }
+.hero-feature h2 {
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.2em; }
+.hero-feature p {
+  margin-bottom: 1.5rem;
+  text-align: center; }
 
 .section-header > h2 {
   margin-bottom: 3rem;
@@ -153,13 +201,11 @@ body {
   .gallery-article figure > img {
     margin-bottom: 3rem;
     max-height: 18rem;
-    width: 100%;
-    height: auto;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
   .gallery-article p {
-    overflow: ellipsis;
     margin-bottom: 0.1875rem;
+    overflow: ellipsis;
     padding: 0 2em;
     max-height: 3rem;
     color: #999;
@@ -170,9 +216,10 @@ body {
     .gallery-article p strong {
       color: #000; }
   .gallery-article a {
+    letter-spacing: 0.1em;
     display: block;
     margin-top: 1.5rem;
-    padding: 1em;
+    padding: 0.75em 1em;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     background: #c0382b;
@@ -180,10 +227,11 @@ body {
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    letter-spacing: 0.1em; }
+    line-height: 1.5rem; }
 
 .sponsor-holder {
   margin-bottom: 1.5rem; }
-  .sponsor-holder img {
-    width: 100%;
-    height: auto; }
+
+#map-canvas {
+  min-height: 22.5rem;
+  width: 100%; }

@@ -2,17 +2,42 @@
 @import "mixins";
 
 .logo-holder {
-  font-size: 2em;
-  line-height: $line-height;
-  @include uppercase-bold(0.01em);
-  span {
-    color: $bold-col;
+  h1 {
+    @include uppercase-bold(0.01em);
+    font-size: 2em;
+    line-height: $line-height;
+    span {
+      color: $bold-col;
+    }
+  }
+}
+
+.main-nav {
+
+  a {
+    @include uppercase-bold(0.1em);
+    display: block;
+    border-bottom: 1px solid $shadow-text-col;
+    color: $shadow-text-col;
+    text-decoration: none;
+    font-size: 0.875em;
+    &:hover {
+      border-bottom: 1px solid $bold-col;
+      color: $header-text-col;
+    }
+  }
+  li {
+    display: inline-block;
+    margin: 0 $line-height / 2;
+  }
+  .current-menu-item a {
+    border-bottom: 1px solid $bold-col;
+    color: $header-text-col;
   }
 }
 .hero-title {
-  @extend %center-setter;
   > h1 {
-    margin-bottom: $line-height;
+    @include push-down(1);
     text-align: center;
     font-size: 3em;
     line-height: $line-height * 2;
@@ -21,10 +46,30 @@
     }
   }
 }
+.hero-feature {
+  $hero-figure-size: 9em;
+  figure {
+    margin: $line-height auto;
+    width: $hero-figure-size;
+    height: $hero-figure-size;
+    border-radius: 100%;
+    background: rgba(100,100,100,0.5);
+  }
+  h2 {
+    @include uppercase-bold(0.1em);
+    @include push-down(1);
+    text-align: center;
+    font-size: 1.2em;
+  }
+  p {
+    @include push-down(1);
+    text-align: center;
+  }
+}
+
 .section-header {
-  @extend %center-setter;
   > h2{
-    margin-bottom: $line-height * 2;
+    @include push-down(2);
     text-align: center;
     font-size: 1.5em;
     &::before, &::after {
@@ -37,29 +82,31 @@
 }
 
 .gallery-article {
-  margin-bottom: $line-height;
+
+
+@include push-down(1);
   border-radius: 3px;
   background: #fff;
 
   figure > img {
+    @extend %img-resize;
+    // TODO: Add hover overlay on image, read webkit filter
+    // TODO: Add Them buttons
     margin-bottom: $line-height * 2;
     max-height: $line-height * 12;
-    width: 100%;
-
-    height: auto;
     border-top-left-radius: 3px; // TODO: Add compass for css3 support
     border-top-right-radius: 3px;
   }
   p {
+    @include push-down(0.125);
     overflow: ellipsis;
-    margin-bottom: $line-height * 0.125;
     padding: 0 2em;
     max-height: $line-height * 2;
     color: #999;
     font-size: 0.875em;
     line-height: $line-height * 0.875;
     &::last-of-type {
-      margin-bottom: $line-height * 0.25;
+      @include push-down(0.25);
     }
     strong {
       color: #000;
@@ -67,9 +114,10 @@
 
   }
   a {
+    @include uppercase-bold(0.1em);
     display: block;
     margin-top: $line-height;
-    padding: 1em;
+    padding: 0.75em 1em;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     background: $bold-col;
@@ -77,14 +125,17 @@
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    @include uppercase-bold(0.1em);
+    line-height: $line-height;
   }
 }
 
 .sponsor-holder {
-  margin-bottom: $line-height;
+  @include push-down(1);
   img {
-    width: 100%;
-    height: auto;
+    @extend %img-resize;
   }
+}
+#map-canvas {
+  min-height: $line-height * 15;
+  width: 100%;
 }
