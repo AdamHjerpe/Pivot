@@ -36,6 +36,7 @@
 
 %dark-pane {
   @include pane($header-col, $header-text-col);
+  @include at2x("../assets/img/header-bg", 70px, 70px);
 }
 
 %light-pane {

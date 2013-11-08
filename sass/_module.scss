@@ -1,9 +1,13 @@
 @import "globals";
 @import "mixins";
 
-%center-setter {
-  margin: 0 auto;
-  width: 90%;
+.logo-holder {
+  font-size: 2em;
+  line-height: $line-height;
+  @include uppercase-bold(0.01em);
+  span {
+    color: $bold-col;
+  }
 }
 .hero-title {
   @extend %center-setter;
@@ -43,7 +47,7 @@
     width: 100%;
 
     height: auto;
-    border-top-left-radius: 3px;
+    border-top-left-radius: 3px; // TODO: Add compass for css3 support
     border-top-right-radius: 3px;
   }
   p {
@@ -54,6 +58,9 @@
     color: #999;
     font-size: 0.875em;
     line-height: $line-height * 0.875;
+    &::last-of-type {
+      margin-bottom: $line-height * 0.25;
+    }
     strong {
       color: #000;
     }
@@ -69,10 +76,8 @@
     color: #fff;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    letter-spacing: 0.1em;
-    font-weight: bold;
+    @include uppercase-bold(0.1em);
   }
 }
 
