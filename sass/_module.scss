@@ -1,19 +1,24 @@
 @import "globals";
 @import "mixins";
-
+.icon {
+  @extend %fa;
+}
 .logo-holder {
   h1 {
     @include uppercase-bold(0.01em);
     font-size: 2em;
     line-height: $line-height;
+    i {
+      color: $bold-col; font-size: 0.875em;
+      letter-spacing: 0.1em;
+    }
     span {
       color: $bold-col;
     }
   }
 }
 
-.main-nav {
-
+.main-nav { // TODO: Fix that float
   a {
     @include uppercase-bold(0.1em);
     display: block;
@@ -47,13 +52,19 @@
   }
 }
 .hero-feature {
-  $hero-figure-size: 9em;
+  $hero-figure-size: 9rem;
   figure {
+    @extend %fa;
+    vertical-align: middle;
+    font-size: $hero-figure-size / 1.8;
+    text-align: center;
+    line-height: $hero-figure-size;
     margin: $line-height auto;
     width: $hero-figure-size;
     height: $hero-figure-size;
     border-radius: 100%;
-    background: rgba(100,100,100,0.5);
+    background: rgba(100,100,150,0.5);
+    display: block;
   }
   h2 {
     @include uppercase-bold(0.1em);
@@ -82,12 +93,9 @@
 }
 
 .gallery-article {
-
-
 @include push-down(1);
   border-radius: 3px;
   background: #fff;
-
   figure > img {
     @extend %img-resize;
     // TODO: Add hover overlay on image, read webkit filter
@@ -99,7 +107,8 @@
   }
   p {
     @include push-down(0.125);
-    overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
     padding: 0 2em;
     max-height: $line-height * 2;
     color: #999;
@@ -111,12 +120,11 @@
     strong {
       color: #000;
     }
-
   }
   a {
     @include uppercase-bold(0.1em);
     display: block;
-    margin-top: $line-height;
+    margin-top: $line-height * 0.9;
     padding: 0.75em 1em;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -125,7 +133,7 @@
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    line-height: $line-height;
+    line-height: $line-height * 1;
   }
 }
 
