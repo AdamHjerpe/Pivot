@@ -1,0 +1,38 @@
+.social-icons {
+  @extend center-setter;
+  color: $header-text-col;
+  width: 21rem;
+  height: 4rem;
+  margin: 1rem auto;
+  display: inline;
+  text-align: center;
+}
+%icon-pos{
+  @extend %fa;
+  display: block;
+  float: left;
+  margin: 0 1.5rem;
+}
+.twitter-icon {
+  @extend %icon-pos;
+  @extend %fa-twitter;
+  @include circle-icon(4rem);
+  background: #1b9ac7;
+}
+.facebook-icon {
+  @extend %icon-pos;
+  @extend %fa-facebook;
+  @include circle-icon(4rem);
+  background: #3a5a9a;
+}
+.google-plus-icon {
+  @extend %icon-pos;
+  @extend %fa-google-plus;
+  @include circle-icon(4rem);
+  background: #dd4a38;
+}
+
+.footer-logo-holder {
+  @extend .logo-holder;
+  @extend %center-setter;
+}

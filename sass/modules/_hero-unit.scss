@@ -1,0 +1,31 @@
+.hero-title {
+  > h1 {
+    @include push-down(1);
+    text-align: center;
+    font-size: 3em;
+    line-height: $line-height * 2;
+    > strong {
+      color: $bold-col;
+    }
+  }
+}
+.hero-feature {
+  $hero-figure-size: 9rem;
+  figure {
+    @extend %fa;
+    @include circle-icon($hero-figure-size);
+    @include push-down(1);
+    background: rgba(100,100,150,0.5);
+  }
+  h2 {
+    @include uppercase-bold(0.1em);
+    @include push-down(1);
+    text-align: center;
+    font-size: 1.2em;
+  }
+  p {
+    @include push-down(1);
+    text-align: center;
+    color: $shadow-text-col
+  }
+}

@@ -1,0 +1,52 @@
+.logo-holder {
+  h1 {
+    @include uppercase-bold(0.01em);
+    font-size: 2em;
+    line-height: $line-height;
+    i {
+      @extend %fa;
+      color: $bold-col;
+      letter-spacing: 0.1em; font-size: 0.875em;
+    }
+    span {
+      color: $bold-col;
+    }
+  }
+}
+
+.main-nav { // TODO: Fix that float
+  a {
+    @include uppercase-bold(0.1em);
+    display: block;
+    border-bottom: 1px solid $shadow-text-col;
+    color: $shadow-text-col;
+    text-decoration: none;
+    font-size: 0.875em;
+    &:hover {
+      border-bottom: 1px solid $bold-col;
+      color: $header-text-col;
+    }
+  }
+  li {
+    display: inline-block;
+    margin: 0 $line-height / 2;
+  }
+  .current-menu-item a {
+    border-bottom: 1px solid $bold-col;
+    color: $header-text-col;
+  }
+}
+
+.section-header {
+  > h2{
+    @include push-down(2);
+    text-align: center;
+    font-size: 1.5em;
+    &::before, &::after {
+      margin: 0 1em 0 1em;
+      color: lighten($text-col, 40%); // TODO: Fix this shit, the lines need to be wider, like 3ems.
+      content: "\2014";
+      font-size: 1em;
+    }
+  }
+}

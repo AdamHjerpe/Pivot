@@ -1,0 +1,10 @@
+.sponsor-holder {
+  @include push-down(1);
+  img {
+    @extend %img-resize;
+  }
+}
+#map-canvas {
+  min-height: $line-height * 15;
+  width: 100%;
+}
