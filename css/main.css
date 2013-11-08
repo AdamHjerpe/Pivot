@@ -57,7 +57,7 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-.icon, .hero-feature figure {
+.logo-holder h1 i, .footer-logo-holder h1 i, .hero-feature figure, .twitter-icon, .facebook-icon, .google-plus-icon {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -72,13 +72,13 @@ table {
 .fa-gears:before {
   content: "\f085"; }
 
-.fa-twitter:before {
+.twitter-icon:before {
   content: "\f099"; }
 
-.fa-facebook:before {
+.facebook-icon:before {
   content: "\f09a"; }
 
-.fa-google-plus:before {
+.google-plus-icon:before {
   content: "\f0d5"; }
 
 .fa-desktop:before {
@@ -98,7 +98,7 @@ strong {
   margin: 0 auto;
   width: 90%; }
 
-.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article a {
+.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article a {
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -177,32 +177,9 @@ body {
 
   .wrapper .hero-feature, .wrapper .gallery-article {
     width: 30.33333%; } }
-@media screen and (max-width: 40em) {
-  body {
-    min-width: 100%; }
-
-  .sponsor-holder, .hero-feature, .gallery-article {
-    display: inline;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-
-  .wrapper::before, .column::before, .main-nav::before, .wrapper::after, .column::after, .main-nav::after {
-    content: "";
-    display: table; }
-  .wrapper:after, .column:after, .main-nav:after {
-    clear: both; }
-
-  .column {
-    display: block;
-    float: left; }
-    .column::first-child {
-      margin-left: 0; }
-
-  .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; } }
+@media screen and (max-width: 45em) {
+  .hero-feature, .gallery-article, .sponsor-holder {
+    width: 90% !important; } }
 .main-header, .hero-unit, .main-footer, .article-gallery, .sponsor-gallery, .map-holder {
   padding: 3em 1em 1.5em 1em;
   min-height: 1.5rem;
@@ -230,8 +207,8 @@ body {
   float: left; }
 
 .main-nav {
-  float: right;
   display: inline;
+  float: right;
   text-align: right; }
 
 .map-holder {
@@ -242,7 +219,7 @@ body {
   margin: 0 auto;
   width: 90%; }
 
-.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article a {
+.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article a {
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -263,8 +240,8 @@ body {
   line-height: 1.5rem; }
   .logo-holder h1 i, .footer-logo-holder h1 i {
     color: #c0382b;
-    font-size: 0.875em;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    font-size: 0.875em; }
   .logo-holder h1 span, .footer-logo-holder h1 span {
     color: #c0382b; }
 
@@ -307,7 +284,8 @@ body {
   font-size: 1.2em; }
 .hero-feature p {
   margin-bottom: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  color: #6a6d76; }
 
 .section-header > h2 {
   margin-bottom: 3rem;
@@ -328,13 +306,32 @@ body {
     max-height: 18rem;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
+  .gallery-article figure {
+    position: relative; }
+    .gallery-article figure a {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      box-sizing: border-box;
+      margin-left: -1.5rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 100%;
+      background: url(../assets/img/Plus_symbol.svg) #c0382b;
+      background-position: center center;
+      background-size: 3.5em;
+      box-shadow: 0 0 0 0.4em rgba(192, 56, 43, 0.3); }
+  .gallery-article h3 {
+    letter-spacing: 0.1em;
+    padding: 0 2em;
+    font-size: 0.875em; }
   .gallery-article p {
     margin-bottom: 0.1875rem;
     overflow: hidden;
-    text-overflow: ellipsis;
     padding: 0 2em;
     max-height: 3rem;
     color: #999;
+    text-overflow: ellipsis;
     font-size: 0.875em;
     line-height: 1.3125rem; }
     .gallery-article p::last-of-type {
@@ -364,6 +361,10 @@ body {
 
 .social-icons {
   color: white; }
+
+.twitter-icon, .facebook-icon, .google-plus-icon {
+  display: block;
+  float: left; }
 
 .twitter-icon {
   font-size: 2.22222rem;

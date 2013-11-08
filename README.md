@@ -8,7 +8,7 @@ Wordpress theme in dev
 
 
 #### Frontend
-- Find suitable icon font-pack.
+[x] Find suitable icon font-pack.
 
 #### Wordpress
 - Try this plugin for logo handling http://cmoreira.net/logos-showcase/

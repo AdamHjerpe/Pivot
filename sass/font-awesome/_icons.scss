@@ -152,8 +152,8 @@
 %#{$fa-css-prefix}-square-o:before { content: $fa-var-square-o; }
 %#{$fa-css-prefix}-bookmark-o:before { content: $fa-var-bookmark-o; }
 %#{$fa-css-prefix}-phone-square:before { content: $fa-var-phone-square; }
-.#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
-.#{$fa-css-prefix}-facebook:before { content: $fa-var-facebook; }
+%#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
+%#{$fa-css-prefix}-facebook:before { content: $fa-var-facebook; }
 %#{$fa-css-prefix}-github:before { content: $fa-var-github; }
 %#{$fa-css-prefix}-unlock:before { content: $fa-var-unlock; }
 %#{$fa-css-prefix}-credit-card:before { content: $fa-var-credit-card; }
@@ -201,7 +201,7 @@
 %#{$fa-css-prefix}-pinterest:before { content: $fa-var-pinterest; }
 %#{$fa-css-prefix}-pinterest-square:before { content: $fa-var-pinterest-square; }
 %#{$fa-css-prefix}-google-plus-square:before { content: $fa-var-google-plus-square; }
-.#{$fa-css-prefix}-google-plus:before { content: $fa-var-google-plus; }
+%#{$fa-css-prefix}-google-plus:before { content: $fa-var-google-plus; }
 %#{$fa-css-prefix}-money:before { content: $fa-var-money; }
 %#{$fa-css-prefix}-caret-down:before { content: $fa-var-caret-down; }
 %#{$fa-css-prefix}-caret-up:before { content: $fa-var-caret-up; }

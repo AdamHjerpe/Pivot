@@ -26,18 +26,10 @@
     $columns: $column-count
   );
 }
-@media screen and (max-width: 40em) {
-    @include base-grid(
-    $width: 100%,
-    $gutter: 0,
-    $columns: 1
-  );
-
-@include generate-grid(
-    $width: 100%,
-    $gutter: 0,
-    $columns: 1
-  );
+@media screen and (max-width: 45em) {
+  .hero-feature, .gallery-article, .sponsor-holder {
+   width: 90% !important;
+  }
 }
 
 %pane {
@@ -77,10 +69,10 @@
    float: left;
   }
   .main-nav{
-    float: right;
-    display: inline;
-    text-align: right;
   @extend %clear;
+    display: inline;
+    float: right;
+    text-align: right;
 
   }
 
