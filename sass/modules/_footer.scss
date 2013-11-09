@@ -3,8 +3,8 @@
   color: $header-text-col;
   width: 21rem;
   height: 4rem;
-  margin: 1rem auto;
-  display: inline;
+  margin: 0 auto !important;
+  display: block;
   text-align: center;
 }
 %icon-pos{
