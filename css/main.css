@@ -235,6 +235,7 @@ body {
 .logo-holder h1, .footer-logo-holder h1 {
   letter-spacing: 0.01em;
   font-size: 2em;
+  margin-left: 0.75rem;
   line-height: 1.5rem; }
   .logo-holder h1 i, .footer-logo-holder h1 i {
     color: #c0382b;

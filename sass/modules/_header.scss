@@ -2,6 +2,7 @@
   h1 {
     @include uppercase-bold(0.01em);
     font-size: 2em;
+    margin-left: $line-height / 2;
     line-height: $line-height;
     i {
       @extend %fa;
