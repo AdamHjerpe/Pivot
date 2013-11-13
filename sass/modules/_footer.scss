@@ -1,9 +1,9 @@
 .social-icons {
-  @extend center-setter;
+  @include push-down;
   color: $header-text-col;
   width: 21rem;
   height: 4rem;
-  margin: 0 auto !important;
+  margin: 0 auto $line-height !important;
   display: block;
   text-align: center;
 }
@@ -33,4 +33,9 @@
 .footer-logo-holder {
   @extend .logo-holder;
   @extend %center-setter;
+  width: 7.5em;
+  float: none;
+  h1  {
+    @extend %center-setter;
+  }
 }

@@ -33,7 +33,7 @@
 }
 
 %pane {
-  padding: 3em 1em 1.5em 1em;
+  padding: ($line-height * 2 )1em $line-height 1em;
   min-height: $line-height;
   width: 100%;
 }

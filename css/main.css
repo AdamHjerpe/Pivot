@@ -87,13 +87,93 @@ table {
 .fa-rocket:before {
   content: "\f135"; }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5rem;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased; }
+  h1 margin, h2 margin, h3 margin, h4 margin, h5 margin, h6 margin {
+    bottom: 1em; }
+
+h1 {
+  font-size: 2em;
+  border-spacing: 10px; }
+
+h2 {
+  font-size: 1.8em; }
+
+h3 {
+  font-size: 1.6em; }
+
+h4 {
+  font-size: 1.4em; }
+
+h5 {
+  font-size: 1.2em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1em;
+  margin: 0 0 1.5rem 0; }
+
+ul, ol {
+  margin: 0 0 1.5rem 1.5rem; }
+
+a {
+  color: #222222;
+  text-decoration: none; }
+  a:visited {
+    color: #626262; }
+  a:hover {
+    color: #090909; }
+  a:focus {
+    color: black; }
+  a:active {
+    color: black; }
+
+li {
+  margin: 0 0 0.5em 0; }
+
 em {
   font-style: italic; }
+  em font {
+    family: "Proxima Nova", sans-serif; }
 
-strong {
-  font-weight: bold; }
+strong font {
+  family: "Proxima Nova", sans-serif;
+  weight: 700; }
 
-.section-header, .hero-title, .footer-logo-holder {
+q:before {
+  content: open-quote; }
+q:after {
+  content: close-quote; }
+
+blockquote {
+  background: ligthen(#dddddd, 1.5%);
+  border-left: 10px solid #151515;
+  margin: 1.5em 0;
+  padding: .5em 1.5em;
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+  blockquote:lang(sv) {
+    quotes: '\201D' '\201D' '\2019' '\2019'; }
+  blockquote:lang(da) {
+    quotes: '\00BB' '\00AB' '\203A' '\2039'; }
+  blockquote:before {
+    content: open-quote; }
+  blockquote:after {
+    content: close-quote; }
+  blockquote p {
+    display: inline; }
+
+code, pre {
+  overflow-wrap: break-word;
+  font-family: Cousine, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  background: #d0d0d0; }
+
+.section-header, .hero-title, .footer-logo-holder, .footer-logo-holder h1 {
   text-align: center;
   margin: 0 auto; }
 
@@ -180,7 +260,7 @@ body {
   .hero-feature, .gallery-article, .sponsor-holder {
     width: 90% !important; } }
 .main-header, .hero-unit, .main-footer, .article-gallery, .sponsor-gallery, .map-holder {
-  padding: 3em 1em 1.5em 1em;
+  padding: 3rem 1em 1.5rem 1em;
   min-height: 1.5rem;
   width: 100%; }
 
@@ -213,7 +293,7 @@ body {
 .map-holder {
   padding: 0; }
 
-.section-header, .hero-title, .footer-logo-holder {
+.section-header, .hero-title, .footer-logo-holder, .footer-logo-holder h1 {
   text-align: center;
   margin: 0 auto; }
 
@@ -352,10 +432,11 @@ body {
     line-height: 1.5rem; }
 
 .social-icons {
+  margin-bottom: 1.5rem;
   color: white;
   width: 21rem;
   height: 4rem;
-  margin: 0 auto !important;
+  margin: 0 auto 1.5rem !important;
   display: block;
   text-align: center; }
 
@@ -376,6 +457,10 @@ body {
 
 .google-plus-icon {
   background: #dd4a38; }
+
+.footer-logo-holder {
+  width: 7.5em;
+  float: none; }
 
 .sponsor-holder {
   margin-bottom: 1.5rem; }

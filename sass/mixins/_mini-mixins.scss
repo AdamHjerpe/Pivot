@@ -27,7 +27,7 @@
   @extend %uppercase-bold;
   letter-spacing: $letter-spacing;
 }
-@mixin push-down($i) {
+@mixin push-down($i: 1) {
   margin-bottom: $line-height * $i;
 }
 
@@ -51,4 +51,7 @@
   line-height: $circle-size;
   width: $circle-size;
   height: $circle-size;
+}
+%border-remove {
+  border: none !important;
 }

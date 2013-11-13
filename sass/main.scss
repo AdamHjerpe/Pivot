@@ -3,4 +3,16 @@
 @import "font-awesome/font-awesome";
 @import "typography";
 @import "layout";
-@import "modules";
+
+// Mixins
+@import "mixins";
+
+// Modules
+@import "modules/header";
+@import "modules/hero-unit";
+@import "modules/article-gallery";
+@import "modules/footer";
+@import "modules/small-stuff"
+
+
+
