@@ -2,30 +2,33 @@
 @import "globals";
 @import "mixins";
 
-@include base-grid(
-    $width: $large-page-width,
-    $gutter: $gutter-width,
-    $columns: $column-count
-  );
+// Grid import
+// Source: http://susy.oddbird.net/guides/getting-started/
+@import "susy";
+// @include base-grid(
+//     $width: $large-page-width,
+//     $gutter: $gutter-width,
+//     $columns: $column-count
+//   );
 
-@include generate-grid(
-    $width: $large-page-width,
-    $gutter: $gutter-width,
-    $columns: $column-count
-  );
-@media screen and (max-width: 75em) {
-    @include base-grid(
-    $width: 100%,
-    $gutter: 3%,
-    $columns: $column-count
-  );
+// @include generate-grid(
+//     $width: $large-page-width,
+//     $gutter: $gutter-width,
+//     $columns: $column-count
+//   );
+// @media screen and (max-width: 75em) {
+//     @include base-grid(
+//     $width: 100%,
+//     $gutter: 3%,
+//     $columns: $column-count
+//   );
 
-@include generate-grid(
-    $width: 100%,
-    $gutter: 3%,
-    $columns: $column-count
-  );
-}
+// @include generate-grid(
+//     $width: 100%,
+//     $gutter: 3%,
+//     $columns: $column-count
+//   );
+// }
 @media screen and (max-width: 45em) {
   .hero-feature, .gallery-article, .sponsor-holder {
    width: 90% !important;
@@ -38,7 +41,7 @@
   width: 100%;
 }
 .wrapper {
-  @extend %container;
+  @include container;
   @extend %clear;
 }
 .column {
@@ -87,21 +90,24 @@
     @extend %center-setter;
   }
   .hero-feature {
-    @extend %span-4;
+    @include span-columns(4);
+    @include nth-omega(3n);
   }
 
 .article-gallery {
   @extend %light-pane;
 }
   .gallery-article {
-    @extend %span-4;
+    @include span-columns(4);
+    @include nth-omega(3n);
   }
 
 .sponsor-gallery {
   @extend %light-pane;
 }
   .sponsor-holder {
-    @extend %span-3;
+    @include span-columns(3);
+    @include nth-omega(4n);
   }
 
 .map-holder {
