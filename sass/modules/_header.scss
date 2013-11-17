@@ -15,7 +15,7 @@
   }
 }
 
-.main-nav { // TODO: Fix that float
+.main-nav {
   a {
     @include uppercase-bold(0.1em);
     display: block;

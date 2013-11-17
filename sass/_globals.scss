@@ -1,20 +1,50 @@
 // TODO: Cleanup on aisle 5!
+
+// Color stash
+$red: rgb(192, 56, 43);
+
+// Base line-height, very important, controls alot of vertical rhytm elements, but should be flexible to change of value.
 $line-height: 1.5rem;
+
+// Header colors / Dark pane
 $header-col: #2c2e3b;
 $header-text-col: #fff;
+
+// Default colors / Light pane
 $background-col: #ddd;
 $text-col: #222;
 
-$large-page-width: 75em;
-$red: rgb(192, 56, 43);
+// Complimentary colors
+// ====================
+
+// Highlight color, mainly used in logo, header, herounit
 $bold-col: $red;
+
+// Darker text color used in herounit, nav
 $shadow-text-col: #6a6d76;
 
+$large-page-width: 75em;
 $base-font: "Proxima Nova", sans-serif;
 
 
 // Susy vars
 $total-columns: 12;
-$column-width: 4.75em;
+$column-width: 4.5em;
 $gutter-width: 1.5em;
 $grid-padding: $gutter-width;
+
+// Responsive vars.
+$bp-medium: 45em;
+
+// $media-layout: <min-width> <layout> <max-width> <ie-fallback>;
+// - You must supply either <min-width> or <layout>.
+// $media-layout: 12;          // Use 12-col layout at matching min-width.
+// $media-layout: 30em;        // At min 30em, use closest fitting layout.
+// $media-layout: 30em 12;     // At min 30em, use 12-col layout.
+$media-layout: 60em 12;
+// $media-layout: 30em 60em;   // Between min 30em & max 60em, use closest layout.
+$media-layout: 30em 8 60em;// Use 12 cols between min 30em & max 60em.
+$media-layout: 1 30em;// Same. Larger length will always be max-width.
+$media-layout : 12 lt-ie9;  // Output is included under `.lt-ie9` class,
+                            // for use with IE conditional comments
+                            // on the <html> tag.

@@ -239,17 +239,13 @@ code, pre {
   display: block;
   margin: 0 auto; }
 
-@media screen and (max-width: 45em) {
-  /* line 33, ../sass/_layout.scss */
-  .hero-feature, .gallery-article, .sponsor-holder {
-    width: 90% !important; } }
-/* line 38, ../sass/_layout.scss */
+/* line 9, ../sass/_layout.scss */
 .main-header, .hero-unit, .main-footer, .article-gallery, .sponsor-gallery, .map-holder {
   padding: 3rem 1em 1.5rem 1em;
   min-height: 1.5rem;
   width: 100%; }
 
-/* line 43, ../sass/_layout.scss */
+/* line 14, ../sass/_layout.scss */
 .wrapper {
   *zoom: 1;
   max-width: 73.5em;
@@ -264,39 +260,39 @@ code, pre {
     display: table;
     clear: both; }
 
-/* line 58, ../sass/_layout.scss */
+/* line 29, ../sass/_layout.scss */
 .main-header, .hero-unit, .main-footer {
   background: #2c2e3b;
   color: white;
   background-image: url("../assets/img/header-bg.png"); }
   @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-    /* line 58, ../sass/_layout.scss */
+    /* line 29, ../sass/_layout.scss */
     .main-header, .hero-unit, .main-footer {
       background-image: url("../assets/img/header-bg@2x.png");
       background-size: 70px 70px; } }
 
-/* line 63, ../sass/_layout.scss */
+/* line 34, ../sass/_layout.scss */
 .article-gallery, .sponsor-gallery, .map-holder {
   background: #dddddd;
   color: #222222;
   background-image: url("../assets/img/white_carbon.png"); }
   @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-    /* line 63, ../sass/_layout.scss */
+    /* line 34, ../sass/_layout.scss */
     .article-gallery, .sponsor-gallery, .map-holder {
       background-image: url("../assets/img/white_carbon@2x.png");
       background-size: 8px 8px; } }
 
-/* line 71, ../sass/_layout.scss */
+/* line 42, ../sass/_layout.scss */
 .logo-holder, .footer-logo-holder {
   float: left; }
 
-/* line 74, ../sass/_layout.scss */
+/* line 45, ../sass/_layout.scss */
 .main-nav {
   display: inline;
   float: right;
   text-align: right; }
 
-/* line 92, ../sass/_layout.scss */
+/* line 63, ../sass/_layout.scss */
 .hero-feature {
   width: 31.97279%;
   float: left;
@@ -307,7 +303,7 @@ code, pre {
     float: right;
     margin-right: 0; }
 
-/* line 100, ../sass/_layout.scss */
+/* line 71, ../sass/_layout.scss */
 .gallery-article {
   width: 31.97279%;
   float: left;
@@ -318,7 +314,7 @@ code, pre {
     float: right;
     margin-right: 0; }
 
-/* line 108, ../sass/_layout.scss */
+/* line 79, ../sass/_layout.scss */
 .sponsor-holder {
   width: 23.46939%;
   float: left;
@@ -329,7 +325,7 @@ code, pre {
     float: right;
     margin-right: 0; }
 
-/* line 113, ../sass/_layout.scss */
+/* line 84, ../sass/_layout.scss */
 .map-holder {
   padding: 0; }
 
