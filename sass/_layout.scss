@@ -5,35 +5,6 @@
 // Grid import
 // Source: http://susy.oddbird.net/guides/getting-started/
 @import "susy";
-// @include base-grid(
-//     $width: $large-page-width,
-//     $gutter: $gutter-width,
-//     $columns: $column-count
-//   );
-
-// @include generate-grid(
-//     $width: $large-page-width,
-//     $gutter: $gutter-width,
-//     $columns: $column-count
-//   );
-// @media screen and (max-width: 75em) {
-//     @include base-grid(
-//     $width: 100%,
-//     $gutter: 3%,
-//     $columns: $column-count
-//   );
-
-// @include generate-grid(
-//     $width: 100%,
-//     $gutter: 3%,
-//     $columns: $column-count
-//   );
-// }
-@media screen and (max-width: 45em) {
-  .hero-feature, .gallery-article, .sponsor-holder {
-   width: 90% !important;
-  }
-}
 
 %pane {
   padding: ($line-height * 2 )1em $line-height 1em;
@@ -92,14 +63,19 @@
   .hero-feature {
     @include span-columns(4);
     @include nth-omega(3n);
+    @include at-breakpoint(30em 12 60em) {
+      @include remove-nth-omega(3n);
+      @include span-columns(6);
+      @include nth-omega(2n);
+    }
   }
 
 .article-gallery {
   @extend %light-pane;
 }
   .gallery-article {
-    @include span-columns(4);
-    @include nth-omega(3n);
+  @include span-columns(4);
+  @include nth-omega(3n);
   }
 
 .sponsor-gallery {
