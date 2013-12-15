@@ -5,20 +5,19 @@
  * @package Pivot
  */
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'pivot' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'pivot' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
-</article><!-- #post-## -->
+<article id="post-<?php the_ID(); ?>" class="gallery-article" <?php post_class(); ?>>
+  <figure>
+    <img src="http://placekitten.com/g/350/244" />
+    <a href="#"></a>
+  </figure>
+  <h3><?php the_title(); ?></h3>
+  <?php the_content(); ?>
+  <?php
+  	wp_link_pages( array(
+  		'before' => '<div class="page-links">' . __( 'Pages:', 'pivot' ),
+  		'after'  => '</div>',
+  	) );
+  ?>
+  <a href="">Read More</a>
+  <?php edit_post_link( __( 'Edit', 'pivot' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+</article>

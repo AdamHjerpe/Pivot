@@ -12,6 +12,12 @@
 
 get_header(); ?>
 
+
+<section class="article-gallery">
+  <header class="section-header">
+    <h2>Our Recent Work</h2>
+  </header>
+	<div class="wrapper">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -27,8 +33,10 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</div>
+			<!-- /.wrapper -->
+			</section>
+			<!-- /.article-gallery -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

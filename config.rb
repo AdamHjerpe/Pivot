@@ -9,7 +9,7 @@ javascripts_dir = "assets/js"
 fonts_dir = "assets/fonts"
 
 output_style = :nested
-environment = :development
+environment = :production
 
 require "susy"
 # To enable relative paths to assets via compass helper functions. Uncomment:

@@ -20,7 +20,7 @@
       bottom: $button-size / 1.5;
       left: 50%;
       box-sizing: border-box;
-      margin-left: -$button-size / 2;
+      margin-left: -$button-size / 2; // Negative value, mind the syntax, -$variable, note the dash before the variable.
       padding: 0;
       width: $button-size;
       height: $button-size;

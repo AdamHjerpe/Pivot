@@ -2,7 +2,6 @@
   h1 {
     @include uppercase-bold(0.01em);
     font-size: 2em;
-    margin-left: $line-height / 2;
     line-height: $line-height;
     i {
       @extend %fa;
@@ -31,8 +30,11 @@
   li {
     display: inline-block;
     margin: 0 $line-height / 2;
+    &:last-of-type {
+      margin: 0 0 0 ($line-height / 2);
+    }
   }
-  .current-menu-item a {
+  .current_page_item a { // Underscores in selector are there to match default Wordpress output
     border-bottom: 1px solid $bold-col;
     color: $header-text-col;
   }
@@ -51,4 +53,3 @@
     }
   }
 }
-// hej hallsdjnvlkjxzcnvkljsdnv;lkdmvcdx

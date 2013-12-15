@@ -2,7 +2,6 @@
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
-/* line 18, ../sass/_base.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,31 +23,25 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 28, ../sass/_base.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 31, ../sass/_base.scss */
 body {
   font-family: "Proxima Nova", sans-serif;
   line-height: 1.5rem; }
 
-/* line 35, ../sass/_base.scss */
 ol, ul {
   list-style: none; }
 
-/* line 38, ../sass/_base.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 42, ../sass/_base.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 46, ../sass/_base.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -64,7 +57,6 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-/* line 4, ../sass/font-awesome/_core.scss */
 .logo-holder h1 i, .footer-logo-holder h1 i, .hero-feature figure, .twitter-icon, .facebook-icon, .google-plus-icon {
   display: inline-block;
   font-family: FontAwesome;
@@ -74,164 +66,125 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 35, ../sass/font-awesome/_icons.scss */
 .fa-repeat:before {
   content: "\f01e"; }
 
-/* line 136, ../sass/font-awesome/_icons.scss */
 .fa-gears:before {
   content: "\f085"; }
 
-/* line 155, ../sass/font-awesome/_icons.scss */
 .twitter-icon:before {
   content: "\f099"; }
 
-/* line 156, ../sass/font-awesome/_icons.scss */
 .facebook-icon:before {
   content: "\f09a"; }
 
-/* line 204, ../sass/font-awesome/_icons.scss */
 .google-plus-icon:before {
   content: "\f0d5"; }
 
-/* line 260, ../sass/font-awesome/_icons.scss */
 .fa-desktop:before {
   content: "\f108"; }
 
-/* line 306, ../sass/font-awesome/_icons.scss */
 .fa-rocket:before {
   content: "\f135"; }
 
-/* line 48, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.5rem;
   font-family: "Proxima Nova", sans-serif;
   font-weight: bold;
   -webkit-font-smoothing: antialiased; }
-  /* line 50, ../sass/_typography.scss */
   h1 margin, h2 margin, h3 margin, h4 margin, h5 margin, h6 margin {
     bottom: 1em; }
 
-/* line 57, ../sass/_typography.scss */
 h1 {
   font-size: 2em;
   border-spacing: 10px; }
 
-/* line 63, ../sass/_typography.scss */
 h2 {
   font-size: 1.8em; }
 
-/* line 67, ../sass/_typography.scss */
 h3 {
   font-size: 1.6em; }
 
-/* line 71, ../sass/_typography.scss */
 h4 {
   font-size: 1.4em; }
 
-/* line 75, ../sass/_typography.scss */
 h5 {
   font-size: 1.2em; }
 
-/* line 79, ../sass/_typography.scss */
 h6 {
   font-size: 1em; }
 
-/* line 87, ../sass/_typography.scss */
 p {
   font-family: "Proxima Nova", sans-serif;
   font-size: 1em;
   margin: 0 0 1.5rem 0; }
 
-/* line 93, ../sass/_typography.scss */
 ul, ol {
   margin: 0 0 1.5rem 1.5rem; }
 
-/* line 100, ../sass/_typography.scss */
 a {
   color: #222222;
   text-decoration: none; }
-  /* line 104, ../sass/_typography.scss */
   a:visited {
     color: #626262; }
-  /* line 108, ../sass/_typography.scss */
   a:hover {
     color: #090909; }
-  /* line 112, ../sass/_typography.scss */
   a:focus {
     color: black; }
-  /* line 116, ../sass/_typography.scss */
   a:active {
     color: black; }
 
-/* line 126, ../sass/_typography.scss */
 li {
   margin: 0 0 0.5em 0; }
 
-/* line 134, ../sass/_typography.scss */
 em {
   font-style: italic; }
-  /* line 136, ../sass/_typography.scss */
   em font {
     family: "Proxima Nova", sans-serif; }
 
-/* line 140, ../sass/_typography.scss */
 strong font {
   family: "Proxima Nova", sans-serif;
   weight: 700; }
 
-/* line 149, ../sass/_typography.scss */
 q:before {
   content: open-quote; }
-/* line 151, ../sass/_typography.scss */
 q:after {
   content: close-quote; }
 
-/* line 155, ../sass/_typography.scss */
 blockquote {
   background: ligthen(#dddddd, 1.5%);
   border-left: 10px solid #151515;
   margin: 1.5em 0;
   padding: .5em 1.5em;
   quotes: "\201C" "\201D" "\2018" "\2019"; }
-  /* line 161, ../sass/_typography.scss */
   blockquote:lang(sv) {
     quotes: '\201D' '\201D' '\2019' '\2019'; }
-  /* line 162, ../sass/_typography.scss */
   blockquote:lang(da) {
     quotes: '\00BB' '\00AB' '\203A' '\2039'; }
-  /* line 170, ../sass/_typography.scss */
   blockquote:before {
     content: open-quote; }
-  /* line 172, ../sass/_typography.scss */
   blockquote:after {
     content: close-quote; }
-  /* line 174, ../sass/_typography.scss */
   blockquote p {
     display: inline; }
 
-/* line 181, ../sass/_typography.scss */
 code, pre {
   overflow-wrap: break-word;
   font-family: Cousine, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   background: #d0d0d0; }
 
-/* line 12, ../sass/mixins/_mini-mixins.scss */
 .section-header, .hero-title, .footer-logo-holder, .footer-logo-holder h1 {
   text-align: center;
   margin: 0 auto; }
 
-/* line 22, ../sass/mixins/_mini-mixins.scss */
 .logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article a {
   font-weight: bold;
   text-transform: uppercase; }
 
-/* line 35, ../sass/mixins/_mini-mixins.scss */
 .gallery-article figure > img, .sponsor-holder img {
   width: 100%;
   height: auto; }
 
-/* line 41, ../sass/mixins/_mini-mixins.scss */
 .hero-feature figure, .twitter-icon, .facebook-icon, .google-plus-icon {
   vertical-align: middle;
   text-align: center;
@@ -239,13 +192,11 @@ code, pre {
   display: block;
   margin: 0 auto; }
 
-/* line 9, ../sass/_layout.scss */
 .main-header, .hero-unit, .main-footer, .article-gallery, .sponsor-gallery, .map-holder {
   padding: 3rem 1em 1.5rem 1em;
   min-height: 1.5rem;
   width: 100%; }
 
-/* line 14, ../sass/_layout.scss */
 .wrapper {
   *zoom: 1;
   max-width: 73.5em;
@@ -254,97 +205,79 @@ code, pre {
   padding-right: 1.5em;
   margin-left: auto;
   margin-right: auto; }
-  /* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .wrapper:after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 29, ../sass/_layout.scss */
 .main-header, .hero-unit, .main-footer {
   background: #2c2e3b;
   color: white;
   background-image: url("../assets/img/header-bg.png"); }
   @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-    /* line 29, ../sass/_layout.scss */
     .main-header, .hero-unit, .main-footer {
       background-image: url("../assets/img/header-bg@2x.png");
       background-size: 70px 70px; } }
 
-/* line 34, ../sass/_layout.scss */
 .article-gallery, .sponsor-gallery, .map-holder {
   background: #dddddd;
   color: #222222;
   background-image: url("../assets/img/white_carbon.png"); }
   @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-    /* line 34, ../sass/_layout.scss */
     .article-gallery, .sponsor-gallery, .map-holder {
       background-image: url("../assets/img/white_carbon@2x.png");
       background-size: 8px 8px; } }
 
-/* line 42, ../sass/_layout.scss */
 .logo-holder, .footer-logo-holder {
   float: left; }
 
-/* line 45, ../sass/_layout.scss */
 .main-nav {
   display: inline;
   float: right;
   text-align: right; }
 
-/* line 63, ../sass/_layout.scss */
 .hero-feature {
   width: 31.97279%;
   float: left;
   margin-right: 2.04082%;
   display: inline; }
-  /* line 184, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/_grid.scss */
   .hero-feature:nth-child(3n) {
     float: right;
     margin-right: 0; }
 
-/* line 71, ../sass/_layout.scss */
 .gallery-article {
   width: 31.97279%;
   float: left;
   margin-right: 2.04082%;
   display: inline; }
-  /* line 184, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/_grid.scss */
   .gallery-article:nth-child(3n) {
     float: right;
     margin-right: 0; }
 
-/* line 79, ../sass/_layout.scss */
 .sponsor-holder {
   width: 23.46939%;
   float: left;
   margin-right: 2.04082%;
   display: inline; }
-  /* line 184, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/_grid.scss */
   .sponsor-holder:nth-child(4n) {
     float: right;
     margin-right: 0; }
 
-/* line 84, ../sass/_layout.scss */
 .map-holder {
   padding: 0; }
 
-/* line 12, ../sass/mixins/_mini-mixins.scss */
 .section-header, .hero-title, .footer-logo-holder, .footer-logo-holder h1 {
   text-align: center;
   margin: 0 auto; }
 
-/* line 22, ../sass/mixins/_mini-mixins.scss */
 .logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article a {
   font-weight: bold;
   text-transform: uppercase; }
 
-/* line 35, ../sass/mixins/_mini-mixins.scss */
 .gallery-article figure > img, .sponsor-holder img {
   width: 100%;
   height: auto; }
 
-/* line 41, ../sass/mixins/_mini-mixins.scss */
 .hero-feature figure, .twitter-icon, .facebook-icon, .google-plus-icon {
   vertical-align: middle;
   text-align: center;
@@ -352,22 +285,17 @@ code, pre {
   display: block;
   margin: 0 auto; }
 
-/* line 2, ../sass/modules/_header.scss */
 .logo-holder h1, .footer-logo-holder h1 {
   letter-spacing: 0.01em;
   font-size: 2em;
-  margin-left: 0.75rem;
   line-height: 1.5rem; }
-  /* line 7, ../sass/modules/_header.scss */
   .logo-holder h1 i, .footer-logo-holder h1 i {
     color: #c0382b;
     letter-spacing: 0.1em;
     font-size: 0.875em; }
-  /* line 12, ../sass/modules/_header.scss */
   .logo-holder h1 span, .footer-logo-holder h1 span {
     color: #c0382b; }
 
-/* line 19, ../sass/modules/_header.scss */
 .main-nav a {
   letter-spacing: 0.1em;
   display: block;
@@ -375,42 +303,36 @@ code, pre {
   color: #6a6d76;
   text-decoration: none;
   font-size: 0.875em; }
-  /* line 26, ../sass/modules/_header.scss */
   .main-nav a:hover {
     border-bottom: 1px solid #c0382b;
     color: white; }
-/* line 31, ../sass/modules/_header.scss */
 .main-nav li {
   display: inline-block;
   margin: 0 0.75rem; }
-/* line 35, ../sass/modules/_header.scss */
-.main-nav .current-menu-item a {
+  .main-nav li:last-of-type {
+    margin: 0 0 0 0.75rem; }
+.main-nav .current_page_item a {
   border-bottom: 1px solid #c0382b;
   color: white; }
 
-/* line 42, ../sass/modules/_header.scss */
 .section-header > h2 {
   margin-bottom: 3rem;
   text-align: center;
   font-size: 1.5em; }
-  /* line 46, ../sass/modules/_header.scss */
   .section-header > h2::before, .section-header > h2::after {
     margin: 0 1em 0 1em;
     color: #888888;
     content: "\2014";
     font-size: 1em; }
 
-/* line 2, ../sass/modules/_hero-unit.scss */
 .hero-title > h1 {
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: 3em;
   line-height: 3rem; }
-  /* line 7, ../sass/modules/_hero-unit.scss */
   .hero-title > h1 > strong {
     color: #c0382b; }
 
-/* line 14, ../sass/modules/_hero-unit.scss */
 .hero-feature figure {
   font-size: 5rem;
   line-height: 9rem;
@@ -418,33 +340,27 @@ code, pre {
   height: 9rem;
   margin-bottom: 1.5rem;
   background: rgba(100, 100, 150, 0.5); }
-/* line 20, ../sass/modules/_hero-unit.scss */
 .hero-feature h2 {
   letter-spacing: 0.1em;
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: 1.2em; }
-/* line 26, ../sass/modules/_hero-unit.scss */
 .hero-feature p {
   margin-bottom: 1.5rem;
   text-align: center;
   color: #6a6d76; }
 
-/* line 1, ../sass/modules/_article-gallery.scss */
 .gallery-article {
   margin-bottom: 1.5rem;
   border-radius: 3px;
   background: #fff; }
-  /* line 5, ../sass/modules/_article-gallery.scss */
   .gallery-article figure > img {
     margin-bottom: 3rem;
     max-height: 18rem;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
-  /* line 14, ../sass/modules/_article-gallery.scss */
   .gallery-article figure {
     position: relative; }
-    /* line 18, ../sass/modules/_article-gallery.scss */
     .gallery-article figure a {
       position: absolute;
       bottom: 2rem;
@@ -455,16 +371,15 @@ code, pre {
       width: 3rem;
       height: 3rem;
       border-radius: 100%;
-      background: url(../assets/img/Plus_symbol.svg) #c0382b;
+      background-image: url(../assets/img/Plus_symbol.svg);
       background-position: center center;
       background-size: 3.5em;
+      background-color: #c0382b;
       box-shadow: 0 0 0 0.4em rgba(192, 56, 43, 0.3); }
-  /* line 35, ../sass/modules/_article-gallery.scss */
   .gallery-article h3 {
     letter-spacing: 0.1em;
     padding: 0 2em;
     font-size: 0.875em; }
-  /* line 40, ../sass/modules/_article-gallery.scss */
   .gallery-article p {
     margin-bottom: 0.1875rem;
     overflow: hidden;
@@ -474,13 +389,10 @@ code, pre {
     text-overflow: ellipsis;
     font-size: 0.875em;
     line-height: 1.3125rem; }
-    /* line 49, ../sass/modules/_article-gallery.scss */
     .gallery-article p::last-of-type {
       margin-bottom: 0.375rem; }
-    /* line 52, ../sass/modules/_article-gallery.scss */
     .gallery-article p strong {
       color: #000; }
-  /* line 56, ../sass/modules/_article-gallery.scss */
   .gallery-article a {
     letter-spacing: 0.1em;
     display: block;
@@ -495,7 +407,6 @@ code, pre {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     line-height: 1.5rem; }
 
-/* line 1, ../sass/modules/_footer.scss */
 .social-icons {
   margin-bottom: 1.5rem;
   color: white;
@@ -505,7 +416,6 @@ code, pre {
   display: block;
   text-align: center; }
 
-/* line 10, ../sass/modules/_footer.scss */
 .twitter-icon, .facebook-icon, .google-plus-icon {
   display: block;
   float: left;
@@ -515,28 +425,22 @@ code, pre {
   width: 4rem;
   height: 4rem; }
 
-/* line 17, ../sass/modules/_footer.scss */
 .twitter-icon {
   background: #1b9ac7; }
 
-/* line 22, ../sass/modules/_footer.scss */
 .facebook-icon {
   background: #3a5a9a; }
 
-/* line 27, ../sass/modules/_footer.scss */
 .google-plus-icon {
   background: #dd4a38; }
 
-/* line 33, ../sass/modules/_footer.scss */
 .footer-logo-holder {
-  width: 7.5em;
+  width: 7.75em;
   float: none; }
 
-/* line 1, ../sass/modules/_small-stuff.scss */
 .sponsor-holder {
   margin-bottom: 1.5rem; }
 
-/* line 7, ../sass/modules/_small-stuff.scss */
 #map-canvas {
   min-height: 22.5rem;
   width: 100%; }

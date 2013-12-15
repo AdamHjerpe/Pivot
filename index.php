@@ -11,10 +11,17 @@
  * @package Pivot
  */
 
-get_header(); ?>
+get_header();
+?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
+<!-- 	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main"> -->
+		<section class="article-gallery">
+		  <header class="section-header">
+		    <h2>Our Recent Work</h2>
+		  </header>
+			<div class="wrapper">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -27,6 +34,7 @@ get_header(); ?>
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					get_template_part( 'content', get_post_format() );
+
 				?>
 
 			<?php endwhile; ?>
@@ -38,9 +46,12 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+		</div>
+		<!-- /.wrapper -->
+		</section>
+		<!-- /.article-gallery -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -63,11 +63,11 @@
   .hero-feature {
     @include span-columns(4);
     @include nth-omega(3n);
-    @include at-breakpoint(30em 12 60em) {
-      @include remove-nth-omega(3n);
-      @include span-columns(6);
-      @include nth-omega(2n);
-    }
+    // @include at-breakpoint(30em 12 60em) {
+    //   @include remove-nth-omega(3n);
+    //   @include span-columns(6);
+    //   @include nth-omega(2n);
+    // }
   }
 
 .article-gallery {

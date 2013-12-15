@@ -7,9 +7,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<!-- 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+ -->
+ 		<section class="article-gallery">
+ 		  <header class="section-header">
+ 		    <h2>Our Recent Work</h2>
+ 		  </header>
+ 			<div class="wrapper">
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
@@ -23,9 +28,12 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</div>
+		<!-- /.wrapper -->
+		</section>
+		<!-- /.article-gallery -->
+		<!-- </main><!-- #main -->
+	<!--</div><!-- #primary --> -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
