@@ -46,6 +46,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.section-header, .hero-title, .hero-feature figure, .footer-logo-holder, .footer-logo-holder h1 {
+  text-align: center;
+  margin: 0 auto; }
+
+.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article .gallery-article-read-more {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.gallery-article figure > img, .sponsor-holder img {
+  width: 100%;
+  height: auto; }
+
+.hero-feature figure, .twitter-icon, .facebook-icon, .google-plus-icon {
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto; }
+
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -173,25 +192,6 @@ code, pre {
   font-family: Cousine, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   background: #d0d0d0; }
 
-.section-header, .hero-title, .footer-logo-holder, .footer-logo-holder h1 {
-  text-align: center;
-  margin: 0 auto; }
-
-.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article a {
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.gallery-article figure > img, .sponsor-holder img {
-  width: 100%;
-  height: auto; }
-
-.hero-feature figure, .twitter-icon, .facebook-icon, .google-plus-icon {
-  vertical-align: middle;
-  text-align: center;
-  border-radius: 100%;
-  display: block;
-  margin: 0 auto; }
-
 .main-header, .hero-unit, .main-footer, .article-gallery, .sponsor-gallery, .map-holder {
   padding: 3rem 1em 1.5rem 1em;
   min-height: 1.5rem;
@@ -266,25 +266,6 @@ code, pre {
 .map-holder {
   padding: 0; }
 
-.section-header, .hero-title, .footer-logo-holder, .footer-logo-holder h1 {
-  text-align: center;
-  margin: 0 auto; }
-
-.logo-holder h1, .footer-logo-holder h1, .main-nav a, .hero-feature h2, .gallery-article h3, .gallery-article a {
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.gallery-article figure > img, .sponsor-holder img {
-  width: 100%;
-  height: auto; }
-
-.hero-feature figure, .twitter-icon, .facebook-icon, .google-plus-icon {
-  vertical-align: middle;
-  text-align: center;
-  border-radius: 100%;
-  display: block;
-  margin: 0 auto; }
-
 .logo-holder h1, .footer-logo-holder h1 {
   letter-spacing: 0.01em;
   font-size: 2em;
@@ -339,6 +320,7 @@ code, pre {
   width: 9rem;
   height: 9rem;
   margin-bottom: 1.5rem;
+  display: block;
   background: rgba(100, 100, 150, 0.5); }
 .hero-feature h2 {
   letter-spacing: 0.1em;
@@ -373,9 +355,7 @@ code, pre {
       border-radius: 100%;
       background-image: url(../assets/img/Plus_symbol.svg);
       background-position: center center;
-      background-size: 3.5em;
-      background-color: #c0382b;
-      box-shadow: 0 0 0 0.4em rgba(192, 56, 43, 0.3); }
+      background-size: 3.5em; }
   .gallery-article h3 {
     letter-spacing: 0.1em;
     padding: 0 2em;
@@ -394,18 +374,65 @@ code, pre {
     .gallery-article p strong {
       color: #000; }
   .gallery-article a {
+    font-size: 0.875em;
+    padding: 0 2em; }
+  .gallery-article .gallery-article-read-more {
     letter-spacing: 0.1em;
     display: block;
     margin-top: 1.35rem;
     padding: 0.75em 1em;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    background: #c0382b;
     color: #fff;
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     line-height: 1.5rem; }
+  .gallery-article figure a {
+    background-color: #c0382b;
+    box-shadow: 0 0 0 0.4em rgba(192, 56, 43, 0.3); }
+  .gallery-article .gallery-article-read-more {
+    background: #c0382b; }
+  .gallery-article:nth-of-type(2) figure a {
+    background-color: #f39c12;
+    box-shadow: 0 0 0 0.4em rgba(243, 156, 18, 0.3); }
+  .gallery-article:nth-of-type(2) .gallery-article-read-more {
+    background: #f39c12; }
+  .gallery-article:nth-of-type(3) figure a {
+    background-color: #27ae60;
+    box-shadow: 0 0 0 0.4em rgba(39, 174, 96, 0.3); }
+  .gallery-article:nth-of-type(3) .gallery-article-read-more {
+    background: #27ae60; }
+  .gallery-article:nth-of-type(4) figure a {
+    background-color: #8e44ad;
+    box-shadow: 0 0 0 0.4em rgba(142, 68, 173, 0.3); }
+  .gallery-article:nth-of-type(4) .gallery-article-read-more {
+    background: #8e44ad; }
+  .gallery-article:nth-of-type(5) figure a {
+    background-color: #e67e22;
+    box-shadow: 0 0 0 0.4em rgba(230, 126, 34, 0.3); }
+  .gallery-article:nth-of-type(5) .gallery-article-read-more {
+    background: #e67e22; }
+  .gallery-article:nth-of-type(6) figure a {
+    background-color: #3498db;
+    box-shadow: 0 0 0 0.4em rgba(52, 152, 219, 0.3); }
+  .gallery-article:nth-of-type(6) .gallery-article-read-more {
+    background: #3498db; }
+  .gallery-article:nth-of-type(7) figure a {
+    background-color: #1abc9c;
+    box-shadow: 0 0 0 0.4em rgba(26, 188, 156, 0.3); }
+  .gallery-article:nth-of-type(7) .gallery-article-read-more {
+    background: #1abc9c; }
+  .gallery-article:nth-of-type(8) figure a {
+    background-color: #e74c3c;
+    box-shadow: 0 0 0 0.4em rgba(231, 76, 60, 0.3); }
+  .gallery-article:nth-of-type(8) .gallery-article-read-more {
+    background: #e74c3c; }
+  .gallery-article:nth-of-type(9) figure a {
+    background-color: #f1c40f;
+    box-shadow: 0 0 0 0.4em rgba(241, 196, 15, 0.3); }
+  .gallery-article:nth-of-type(9) .gallery-article-read-more {
+    background: #f1c40f; }
 
 .social-icons {
   margin-bottom: 1.5rem;

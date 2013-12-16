@@ -1,12 +1,13 @@
 @import "base";
 @import "globals";
+// Mixins
+@import "mixins/mini-mixins";
+@import "mixins/color-collection";
+
 // Font-Awesome import, obviously
 @import "font-awesome/font-awesome";
 @import "typography";
 @import "layout";
-
-// Mixins
-@import "mixins";
 
 // Modules
 @import "modules/header";

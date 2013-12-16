@@ -13,8 +13,10 @@
   $hero-figure-size: 9rem;
   figure {
     @extend %fa;
+    @extend %center-setter;
     @include circle-icon($hero-figure-size);
     @include push-down(1);
+    display: block;
     background: rgba(100,100,150,0.5);
   }
   h2 {

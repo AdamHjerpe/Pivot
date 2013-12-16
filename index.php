@@ -50,8 +50,6 @@ get_header();
 		<!-- /.wrapper -->
 		</section>
 		<!-- /.article-gallery -->
+		<?php get_template_part( 'clients'); ?>
 
-
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

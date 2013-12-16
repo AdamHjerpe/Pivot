@@ -7,8 +7,21 @@
  * @package Pivot
  */
 ?>
+
 </div>
 <!-- /.wrapper -->
+<section class="map-holder">
+  <header class="section-header">
+    <h2>Our Location</h2>
+  </header>
+  <div id="map-canvas">
+    <?php
+      echo do_shortcode('[google-map-v3 shortcodeid="TO_BE_GENERATED" width="100%" height="452" zoom="12" maptype="roadmap" mapalign="center" directionhint="false" language="default" poweredby="false" maptypecontrol="true" pancontrol="true" zoomcontrol="true" scalecontrol="true" streetviewcontrol="true" scrollwheelcontrol="false" draggable="true" tiltfourtyfive="false" enablegeolocationmarker="false" addmarkermashup="false" addmarkermashupbubble="false" addmarkerlist="Karlskoga{}1-default.png" bubbleautopan="true" distanceunits="miles" showbike="false" showtraffic="false" showpanoramio="false"]
+' );;
+    ?>
+  </div>
+</section>
+<!-- /.map-holder -->
 <footer class="main-footer">
   <div class="wrapper">
     <section class="social-icons">

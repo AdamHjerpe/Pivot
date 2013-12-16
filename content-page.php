@@ -10,7 +10,7 @@
     <img src="http://placekitten.com/g/350/244" />
     <a href="#"></a>
   </figure>
-  <h3><?php the_title(); ?></h3>
+  <?php the_title( '<h3>', '</h3>' ); ?>
   <?php the_content(); ?>
   <?php
   	wp_link_pages( array(
@@ -18,6 +18,6 @@
   		'after'  => '</div>',
   	) );
   ?>
-  <a href="">Read More</a>
   <?php edit_post_link( __( 'Edit', 'pivot' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+  <a href="">Read More</a>
 </article>

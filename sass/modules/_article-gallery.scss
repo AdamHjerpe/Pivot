@@ -1,3 +1,15 @@
+@mixin gallery-colors($arg){
+  figure {
+    a {
+      background-color: $arg ;
+      box-shadow: 0 0 0 0.4em fade_out($arg, 0.7);
+    }
+  }
+    .gallery-article-read-more {
+      background: $arg ;
+    }
+}
+
 .gallery-article {
 @include push-down(1);
   border-radius: 3px;
@@ -28,8 +40,6 @@
       background-image: url(../assets/img/Plus_symbol.svg);
       background-position: center center;
       background-size: 3.5em;
-      background-color: $bold-col;
-      box-shadow: 0 0 0 0.4em fade_out($bold-col, 0.7);
     }
   }
   h3 {
@@ -54,17 +64,47 @@
     }
   }
   a {
+    font-size: 0.875em;
+    padding: 0 2em;
+  }
+  .gallery-article-read-more {
     @include uppercase-bold(0.1em);
     display: block;
     margin-top: $line-height * 0.9;
     padding: 0.75em 1em;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    background: $bold-col;
     color: #fff;
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     line-height: $line-height * 1;
   }
+  // All colors below
+  @include gallery-colors($bold-col);
+  &:nth-of-type(2) {
+    @include gallery-colors($orange);
+  }
+  &:nth-of-type(3) {
+    @include gallery-colors($nephritis);
+  }
+  &:nth-of-type(4) {
+    @include gallery-colors($wisteria);
+  }
+  &:nth-of-type(5) {
+    @include gallery-colors($carrot);
+  }
+  &:nth-of-type(6) {
+    @include gallery-colors($peter-river);
+  }
+  &:nth-of-type(7) {
+    @include gallery-colors($turquoise);
+  }
+  &:nth-of-type(8) {
+    @include gallery-colors($alizarin);
+  }
+  &:nth-of-type(9) {
+    @include gallery-colors($sun-flower);
+  }
+
 }
