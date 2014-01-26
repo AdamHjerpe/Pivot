@@ -1,4 +1,6 @@
-// TODO: Cleanup on aisle 5!
+////////////
+// Colors //
+////////////
 
 // Color stash
 $red: rgb(192, 56, 43);
@@ -14,17 +16,26 @@ $header-text-col: #fff;
 $background-col: #ddd;
 $text-col: #222;
 
-// Complimentary colors
-// ====================
-
+// ## Complimentary colors
+//
 // Highlight color, mainly used in logo, header, herounit
 $bold-col: $red;
 
 // Darker text color used in herounit, nav
 $shadow-text-col: #6a6d76;
 
-$large-page-width: 75em;
+
+//////////
+// Misc //
+//////////
+
+// Base Font
 $base-font: "Proxima Nova", sans-serif;
+
+// Content width
+$large-page-width: 75em;
+
+
 
 
 // Susy vars

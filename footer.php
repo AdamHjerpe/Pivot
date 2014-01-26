@@ -14,13 +14,25 @@
   <header class="section-header">
     <h2>Our Location</h2>
   </header>
-  <div id="map-canvas">
-    <?php
-      echo do_shortcode('[google-map-v3 shortcodeid="TO_BE_GENERATED" width="100%" height="452" zoom="12" maptype="roadmap" mapalign="center" directionhint="false" language="default" poweredby="false" maptypecontrol="true" pancontrol="true" zoomcontrol="true" scalecontrol="true" streetviewcontrol="true" scrollwheelcontrol="false" draggable="true" tiltfourtyfive="false" enablegeolocationmarker="false" addmarkermashup="false" addmarkermashupbubble="false" addmarkerlist="Karlskoga{}1-default.png" bubbleautopan="true" distanceunits="miles" showbike="false" showtraffic="false" showpanoramio="false"]
-' );;
-    ?>
-  </div>
+  <div id="map-canvas" />
 </section>
+<!-- /.map-holder -->
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgsKkMMp_Pj7XDEtLeFiw854uR1Ky2Iew&sensor=true">
+    </script>
+</script>
+<script type="text/javascript">
+ function initialize() {
+   var mapOptions = {
+     center: new google.maps.LatLng(59.3333, 14.5167),
+     zoom: 13,
+     mapTypeId: google.maps.MapTypeId.ROADMAP
+   };
+   var map = new google.maps.Map(document.getElementById("map-canvas"),
+       mapOptions);
+ }
+ google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <!-- /.map-holder -->
 <footer class="main-footer">
   <div class="wrapper">
